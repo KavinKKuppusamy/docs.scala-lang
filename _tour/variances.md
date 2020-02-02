@@ -25,7 +25,7 @@ A type parameter `A` of a generic class can be made covariant by using the annot
 Consider this simple class structure:
 
 ```tut
-abstract class Animal {
+abstract class Animal[+A] {
   def name: String
 }
 case class Cat(name: String) extends Animal
